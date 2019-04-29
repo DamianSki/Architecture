@@ -1,0 +1,9 @@
+/home/damian/workspace/Architecture/MicroServices/MicroServices/bin/Debug/netcoreapp2.2/MicroServices.deps.json
+/home/damian/workspace/Architecture/MicroServices/MicroServices/bin/Debug/netcoreapp2.2/MicroServices.dll
+/home/damian/workspace/Architecture/MicroServices/MicroServices/bin/Debug/netcoreapp2.2/MicroServices.pdb
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.csprojAssemblyReference.cache
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.csproj.CoreCompileInputs.cache
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.AssemblyInfoInputs.cache
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.AssemblyInfo.cs
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.dll
+/home/damian/workspace/Architecture/MicroServices/MicroServices/obj/Debug/netcoreapp2.2/MicroServices.pdb

@@ -1,0 +1,14 @@
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.deps.json
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.runtimeconfig.json
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.runtimeconfig.dev.json
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.dll
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.pdb
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.csprojAssemblyReference.cache
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.csproj.CoreCompileInputs.cache
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorAssemblyInfo.cache
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorAssemblyInfo.cs
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.AssemblyInfoInputs.cache
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.AssemblyInfo.cs
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorTargetAssemblyInfo.cache
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.dll
+/home/damian/workspace/Architecture/CQRS/StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.pdb
