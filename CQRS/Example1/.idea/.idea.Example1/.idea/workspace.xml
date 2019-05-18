@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5f2395b-87e9-4a64-b074-4105c72518f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Example1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BDDTests/Pirmitives/BaseBddTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Session/Commands/CreateDealCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Session/Events/DealCreatedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Session/SessionAggregate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Exceptions/CommandHandlerNotDefException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/IApplyEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/IHandleCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/.idea/.idea.StockExchange/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/StockExchange.Application.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/Debug/netcoreapp2.2/StockExchange.Application.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/Debug/netcoreapp2.2/StockExchange.Application.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/Debug/netcoreapp2.2/StockExchange.Application.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/StockExchange.Application.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/StockExchange.Application.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/StockExchange.Application.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Application/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/StockExchange.Contracts.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/Debug/netcoreapp2.2/StockExchange.Contracts.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/Debug/netcoreapp2.2/StockExchange.Contracts.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/Debug/netcoreapp2.2/StockExchange.Contracts.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/StockExchange.Contracts.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/StockExchange.Contracts.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/StockExchange.Contracts.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Contracts/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/Counterparty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/StockExchange.Domain.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/Debug/netcoreapp2.2/StockExchange.Domain.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/Debug/netcoreapp2.2/StockExchange.Domain.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/Debug/netcoreapp2.2/StockExchange.Domain.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/StockExchange.Domain.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/StockExchange.Domain.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/StockExchange.Domain.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Domain/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/StockExchange.Web.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/bin/Debug/netcoreapp2.2/StockExchange.Web.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/Debug/netcoreapp2.2/StockExchange.Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/StockExchange.Web.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/StockExchange.Web.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/StockExchange.Web.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.Web/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StockExchange/StockExchange.sln.DotSettings.user" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/Session/SessionAggregate.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <folding>
+                <marker date="1557945571608" expanded="false" signature="6:108" ph="..." />
+                <marker date="1557945571608" expanded="true" signature="134:647" ph="{...}" />
+                <marker date="1557945571608" expanded="true" signature="253:645" ph="{...}" />
+                <marker date="1557945571608" expanded="true" signature="321:450" ph="{...}" />
+                <marker date="1557945571608" expanded="true" signature="392:439" ph="{...}" />
+                <marker date="1557945571608" expanded="true" signature="512:639" ph="{...}" />
+                <marker date="1557945571608" expanded="true" signature="581:628" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BDDTests/OpenSessionAggregateTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+              <folding>
+                <marker date="1557948999700" expanded="false" signature="6:168" ph="..." />
+                <marker date="1557948999700" expanded="true" signature="188:1155" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="261:1153" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="374:460" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="512:1147" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="596:735" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="855:1010" ph="{...}" />
+                <marker date="1557948999700" expanded="true" signature="1073:1121" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BDDTests/Pirmitives/BaseBddTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+              <folding>
+                <marker date="1557949247517" expanded="false" signature="6:189" ph="..." />
+                <marker date="1557949247517" expanded="true" signature="220:6282" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="309:6280" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="445:507" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="607:682" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="765:859" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="931:1021" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1095:1188" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1266:2121" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1365:2085" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1439:1655" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1517:1630" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1719:1881" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="1902:2071" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="2123:2523" ph="/* protected Func&lt;TAggregate, object&gt; When&lt;TCommand&gt;(TCommand command) ... */" />
+                <marker date="1557949247517" expanded="true" signature="2602:4355" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="2638:4344" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="2734:3944" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="2816:3478" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="2902:3456" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="3012:3170" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="3203:3430" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="3546:3720" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="3745:3926" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="4025:4148" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="4169:4330" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="4416:5236" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="4452:5225" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="4495:5211" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="5309:5655" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="5418:5600" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="5709:5971" ph="{...}" />
+                <marker date="1557949247517" expanded="true" signature="6031:6274" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Infrastructure/IHandleCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <marker date="1557683572185" expanded="true" signature="51:159" ph="{...}" />
+                <marker date="1557683572185" expanded="true" signature="99:157" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Domain/Session/Commands/OpenSessionCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Aggregate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Session/Events/SessionOpenedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Session/SessionAggregate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Session/Commands/CreateDealCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Session/Events/DealCreatedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/31/d9229bdb/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BDDTests/OpenSessionAggregateTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BDDTests/Pirmitives/BaseBddTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/IApplyEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/IHandleCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Exceptions/CommandHandlerNotDefException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/bf/e92381cc/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/65/888f5f36/MethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Commands/Class1.cs" />
+        <option value="$PROJECT_DIR$/Events/Class1.cs" />
+        <option value="$PROJECT_DIR$/Events/SessionOpenedEvent.cs" />
+        <option value="$PROJECT_DIR$/Commands/CreateDealCommand.cs" />
+        <option value="$PROJECT_DIR$/Events/DealCreatedEvent.cs" />
+        <option value="$PROJECT_DIR$/Commands/OpenSessionCommand.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Class1.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/IApplyEvent.cs" />
+        <option value="$PROJECT_DIR$/Domain/Class1.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/Pirmitives/BDD.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/IHandleCommand.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Exceptions/CommandHandlerNotDefiniedException.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Exceptions/CommandHandlerNotDefException.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/Pirmitives/BDDTests.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/Pirmitives/BddTestsBase.cs" />
+        <option value="$PROJECT_DIR$/Domain/Session/Commands/OpenSessionCommand.cs" />
+        <option value="$PROJECT_DIR$/Domain/Session/SessionAggregate.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Aggregate.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/OpenSessionAggregateTest.cs" />
+        <option value="$PROJECT_DIR$/BDDTests/Pirmitives/BaseBddTests.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1723" />
+    <option name="y" value="184" />
+    <option name="width" value="1600" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="BDDTests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Session" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Session" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Commands" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Session" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Events" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Example1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Exceptions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5f2395b-87e9-4a64-b074-4105c72518f0" name="Default Changelist" comment="" />
+      <created>1557666759824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557666759824</updated>
+      <workItem from="1557666761676" duration="13586000" />
+      <workItem from="1557772914619" duration="3121000" />
+      <workItem from="1557940508984" duration="6041000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22748000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1599" y="28" width="1922" height="1145" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17571884" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294347" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32846004" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.28654972" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.24074075" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Domain/Session/Commands/CreateDealCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1557669279800" expanded="true" signature="33:108" ph="{...}" />
+            <marker date="1557669279800" expanded="true" signature="70:106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Session/Events/DealCreatedEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <marker date="1557669285048" expanded="true" signature="31:105" ph="{...}" />
+            <marker date="1557669285048" expanded="true" signature="67:103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Session/Events/SessionOpenedEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1557669293156" expanded="true" signature="31:107" ph="{...}" />
+            <marker date="1557669293156" expanded="true" signature="69:105" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/65/888f5f36/MethodInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Class1.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/bf/e92381cc/Array.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="795" column="6" selection-start-line="795" selection-start-column="6" selection-end-line="795" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A42AE733-E333-4634-BAE5-ADE86E3A3A7D/31/d9229bdb/DateTime.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="698" column="8" selection-start-line="698" selection-start-column="8" selection-end-line="698" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Session/SessionAggregate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <marker date="1557945571608" expanded="false" signature="6:108" ph="..." />
+            <marker date="1557945571608" expanded="true" signature="134:647" ph="{...}" />
+            <marker date="1557945571608" expanded="true" signature="253:645" ph="{...}" />
+            <marker date="1557945571608" expanded="true" signature="321:450" ph="{...}" />
+            <marker date="1557945571608" expanded="true" signature="392:439" ph="{...}" />
+            <marker date="1557945571608" expanded="true" signature="512:639" ph="{...}" />
+            <marker date="1557945571608" expanded="true" signature="581:628" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="161" column="6" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Infrastructure/IApplyEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <marker date="1557671761746" expanded="true" signature="24:116" ph="{...}" />
+            <marker date="1557671761746" expanded="true" signature="67:114" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Session/Commands/OpenSessionCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <marker date="1557944604442" expanded="false" signature="6:77" ph="..." />
+            <marker date="1557944604442" expanded="true" signature="112:278" ph="{...}" />
+            <marker date="1557944604442" expanded="true" signature="150:276" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Infrastructure/Exceptions/CommandHandlerNotDefException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1557689440323" expanded="true" signature="50:227" ph="{...}" />
+            <marker date="1557689440323" expanded="true" signature="111:225" ph="{...}" />
+            <marker date="1557689440323" expanded="true" signature="186:219" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Infrastructure/Aggregate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <marker date="1557946528754" expanded="false" signature="6:39" ph="..." />
+            <marker date="1557946528754" expanded="true" signature="65:891" ph="{...}" />
+            <marker date="1557946528754" expanded="true" signature="103:889" ph="{...}" />
+            <marker date="1557946528754" expanded="true" signature="257:488" ph="{...}" />
+            <marker date="1557946528754" expanded="true" signature="310:478" ph="{...}" />
+            <marker date="1557946528754" expanded="true" signature="546:883" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Infrastructure/IHandleCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <marker date="1557683572185" expanded="true" signature="51:159" ph="{...}" />
+            <marker date="1557683572185" expanded="true" signature="99:157" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDDTests/OpenSessionAggregateTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <marker date="1557948999700" expanded="false" signature="6:168" ph="..." />
+            <marker date="1557948999700" expanded="true" signature="188:1155" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="261:1153" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="374:460" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="512:1147" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="596:735" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="855:1010" ph="{...}" />
+            <marker date="1557948999700" expanded="true" signature="1073:1121" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BDDTests/Pirmitives/BaseBddTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+          <folding>
+            <marker date="1557949247517" expanded="false" signature="6:189" ph="..." />
+            <marker date="1557949247517" expanded="true" signature="220:6282" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="309:6280" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="445:507" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="607:682" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="765:859" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="931:1021" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1095:1188" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1266:2121" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1365:2085" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1439:1655" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1517:1630" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1719:1881" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="1902:2071" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="2123:2523" ph="/* protected Func&lt;TAggregate, object&gt; When&lt;TCommand&gt;(TCommand command) ... */" />
+            <marker date="1557949247517" expanded="true" signature="2602:4355" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="2638:4344" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="2734:3944" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="2816:3478" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="2902:3456" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="3012:3170" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="3203:3430" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="3546:3720" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="3745:3926" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="4025:4148" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="4169:4330" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="4416:5236" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="4452:5225" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="4495:5211" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="5309:5655" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="5418:5600" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="5709:5971" ph="{...}" />
+            <marker date="1557949247517" expanded="true" signature="6031:6274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

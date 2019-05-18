@@ -1,0 +1,9 @@
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/bin/Debug/netcoreapp2.2/Infrastructure.deps.json
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/bin/Debug/netcoreapp2.2/Infrastructure.dll
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/bin/Debug/netcoreapp2.2/Infrastructure.pdb
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.csproj.CoreCompileInputs.cache
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.AssemblyInfoInputs.cache
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.AssemblyInfo.cs
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.dll
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.pdb
+/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/obj/Debug/netcoreapp2.2/Infrastructure.csprojAssemblyReference.cache

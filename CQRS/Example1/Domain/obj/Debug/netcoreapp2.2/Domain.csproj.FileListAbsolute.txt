@@ -1,0 +1,12 @@
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/bin/Debug/netcoreapp2.2/Domain.deps.json
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/bin/Debug/netcoreapp2.2/Domain.dll
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/bin/Debug/netcoreapp2.2/Domain.pdb
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/bin/Debug/netcoreapp2.2/Infrastructure.dll
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/bin/Debug/netcoreapp2.2/Infrastructure.pdb
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.csprojAssemblyReference.cache
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.csproj.CoreCompileInputs.cache
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.AssemblyInfoInputs.cache
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.AssemblyInfo.cs
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.csproj.CopyComplete
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.dll
+/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.pdb
