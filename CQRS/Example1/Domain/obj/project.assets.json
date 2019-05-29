@@ -702,35 +702,37 @@
     ]
   },
   "packageFolders": {
-    "/home/damian/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\dsoba\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/damian/workspace/Architecture/CQRS/Example1/Domain/Domain.csproj",
+      "projectUniqueName": "D:\\workspace\\Architecture\\CQRS\\Example1\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/damian/workspace/Architecture/CQRS/Example1/Domain/Domain.csproj",
-      "packagesPath": "/home/damian/.nuget/packages/",
-      "outputPath": "/home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/",
+      "projectPath": "D:\\workspace\\Architecture\\CQRS\\Example1\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\dsoba\\.nuget\\packages\\",
+      "outputPath": "D:\\workspace\\Architecture\\CQRS\\Example1\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/damian/.config/NuGet/NuGet.Config"
+        "C:\\Users\\dsoba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/damian/workspace/Architecture/CQRS/Example1/Infrastructure/Infrastructure.csproj"
+            "D:\\workspace\\Architecture\\CQRS\\Example1\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\workspace\\Architecture\\CQRS\\Example1\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

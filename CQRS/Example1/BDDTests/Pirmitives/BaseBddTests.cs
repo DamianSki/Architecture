@@ -3,7 +3,6 @@ using System.Collections;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
-using Events;
 using Infrastructure;
 using Infrastructure.Exceptions;
 using Xunit;
@@ -13,7 +12,6 @@ namespace BDDTests.Pirmitives
     public abstract class BaseBddTests<TAggregate> where TAggregate : Aggregate, new()
     {
         private TAggregate Aggregate { get; }
-
         private IEnumerable Events { get; set; }
 
         protected BaseBddTests()
@@ -41,7 +39,7 @@ namespace BDDTests.Pirmitives
 
         public BaseBddTests<TAggregate> When<TCommand>(TCommand command)
         {
-            Events = DispatchCommand(command);
+            Events = DispatchCommand(command).Cast<object>().ToArray();
 
             return this;
         }
@@ -56,7 +54,13 @@ namespace BDDTests.Pirmitives
                 {
                     for (int i = 0; i < events.Length; i++)
                     {
-                        if(events[i].GetType() == expectedEvents[i])
+                        if (events[i].GetType() == expectedEvents[i].GetType())
+                        {
+                            Assert.Equal(Serialize(expectedEvents[i]), Serialize(events[i]));
+                        }
+                        else {
+                            Assert.True(false, $"Incorrect event in results; expected a {expectedEvents[i].GetType().Name} but got a {events[i].GetType().Name}");
+                        }
                     }       
                 }
                 else if (events.Length < expectedEvents.Length)
@@ -67,89 +71,30 @@ namespace BDDTests.Pirmitives
                 {
                     Assert.True(false, $"Unexpected event(s) emitted: {string.Join(", ", this.EventDiff(expectedEvents, events))}");
                 }
-            }
+            }            
 
             return this;
         }
-
-//        protected Func<TAggregate, object> When<TCommand>(TCommand command)
-//        {
-//            return agg => {
-//                try
-//                {
-//                    return DispatchCommand(command).Cast<object>().ToArray();
-//                }
-//                catch (Exception e)
-//                {
-//                    return e;
-//                }
-//            };
-//        }
         
-        protected Action<object> Then(params object[] expectedEvents)
+        protected BaseBddTests<TAggregate> ThenFailWith<TException>(Exception ex)
         {
-            return obj =>
+            switch (ex)
             {
-                var events = (object[]) obj;
+                case TException _:
+                    Assert.True(true, "Got correct exception type");
+                    break;
+                case CommandHandlerNotDefException exception:
+                    Assert.False(true, exception.Message);
+                    break;
+                case Exception _:
+                    Assert.False(true, $"Expected exception {typeof(TException).Name}, but got exception {ex.GetType().Name}");
+                    break;
+                default:
+                    Assert.False(true, $"Expected exception {typeof(TException).Name}, but got event result");
+                    break;
+            }
 
-                if (events != null)
-                {
-                    if (events.Length == expectedEvents.Length)
-                    {
-                        for (var i = 0; i < events.Length; i++)
-                        {
-                            if (events[i].GetType() == expectedEvents[i].GetType())
-                            {
-                                Assert.Equal(Serialize(expectedEvents[i]), Serialize(events[i]));
-                            }
-                            else
-                            {
-                                Assert.True(false, $"Incorrect event in results; expected a {expectedEvents[i].GetType().Name} but got a {events[i].GetType().Name}");
-                            }
-                        }
-                    }
-                    else if (events.Length < expectedEvents.Length)
-                    {
-                        Assert.True(false, $"Expected event(s) missing: {string.Join(", ", EventDiff(expectedEvents, events))}");
-                    }
-                    else
-                    {
-                        Assert.True(false, $"Unexpected event(s) emitted: {string.Join(", ", this.EventDiff(expectedEvents, events))}");
-                    }
-                }
-                else if (obj.GetType() == typeof(CommandHandlerNotDefException))
-                {
-                    
-                    Assert.True(false, ((Exception)obj).Message);
-                }
-                else
-                {
-                    Assert.True(false, $"Expected events, but got Exception {obj.GetType().Name}");
-                        
-                }
-            };
-        }
-
-        protected Action<object> ThenFailWith<TException>()
-        {
-            return got =>
-            {
-                switch (got)
-                {
-                    case TException _:
-                        Assert.True(true, "Got correct exception type");
-                        break;
-                    case CommandHandlerNotDefException exception:
-                        Assert.False(true, exception.Message);
-                        break;
-                    case Exception _:
-                        Assert.False(true, $"Expected exception {typeof(TException).Name}, but got exception {got.GetType().Name}");
-                        break;
-                    default:
-                        Assert.False(true, $"Expected exception {typeof(TException).Name}, but got event result");
-                        break;
-                }
-            };
+            return this;
         }
 
         private IEnumerable DispatchCommand<TCommand>(TCommand command)

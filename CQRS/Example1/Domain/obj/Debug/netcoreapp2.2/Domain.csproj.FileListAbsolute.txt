@@ -10,3 +10,15 @@
 /home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.csproj.CopyComplete
 /home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.dll
 /home/damian/workspace/Architecture/CQRS/Example1/Domain/obj/Debug/netcoreapp2.2/Domain.pdb
+D:\workspace\Architecture\CQRS\Example1\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+D:\workspace\Architecture\CQRS\Example1\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+D:\workspace\Architecture\CQRS\Example1\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\workspace\Architecture\CQRS\Example1\Domain\bin\Debug\netcoreapp2.2\Infrastructure.dll
+D:\workspace\Architecture\CQRS\Example1\Domain\bin\Debug\netcoreapp2.2\Infrastructure.pdb
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CopyComplete
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+D:\workspace\Architecture\CQRS\Example1\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

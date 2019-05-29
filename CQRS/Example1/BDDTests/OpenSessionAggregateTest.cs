@@ -1,10 +1,8 @@
 using System;
-using System.Collections;
 using BDDTests.Pirmitives;
 using Domain.Session;
 using Domain.Session.Commands;
-using Events;
-using Infrastructure;
+using Domain.Session.Events;
 using Xunit;
 
 namespace BDDTests
@@ -21,29 +19,37 @@ namespace BDDTests
         }
         
         [Fact]
-        public void Test1()
+        public void OpenSession()
         {
             Given()
             .When(new OpenSessionCommand
             {
                 Id = _id,
-                Opened = DateTime.Now,
-                Closed = DateTime.Now.Add(new TimeSpan(1))
+                Opened = _opened,                
+            })
+            .Then(new SessionOpenedEvent
+            {
+                Id = _id,
+                Opened = _opened,
             });
-            
-            Test(
-                Given(), 
-                When(new OpenSessionCommand
-                {
-                    Id = _id,
-                    Opened = DateTime.Now,
-                    Closed = DateTime.Now.Add(new TimeSpan(1))
-                }),
-                Then(new SessionOpenedEvent
-                {
-                    Id = _id
-                })
-            );
+        }
+
+        [Fact]
+        public void CloseSession()
+        {
+            var dt = DateTime.Now;
+
+            Given(new SessionOpenedEvent {
+                Opened = DateTime.Now.Add(new TimeSpan(-1))
+            })
+            .When(new CloseSessionCommand {
+                Id = _id,
+                Closed = dt
+            })
+            .Then(new CloseSessionEvent {
+                Id = _id,
+                Closed =  dt
+            });
         }
     }
 }

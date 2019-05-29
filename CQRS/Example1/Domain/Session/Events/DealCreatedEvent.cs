@@ -1,9 +1,10 @@
 using System;
 
-namespace Events
+namespace Domain.Session.Events
 {
     public class DealCreatedEvent
     {
         public Guid Id;
+        public DateTime Created { get; set; }
     }
 }

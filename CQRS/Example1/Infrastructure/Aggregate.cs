@@ -13,7 +13,7 @@ namespace Infrastructure
         {
             foreach (var @event in events)
             {
-                GetType().GetMethod("ApplyOneEvent").MakeGenericMethod(@event.GetType())
+                GetType().GetMethod(nameof(ApplyOneEvent)).MakeGenericMethod(@event.GetType())
                     .Invoke(this, new[] {@event});
             }
         }
